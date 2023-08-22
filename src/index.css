@@ -11,3 +11,125 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  background-image: url("../public/glassesImage/background.jpg");
+  background-size: cover;
+  background-position:  center ;
+  background-repeat: no-repeat;
+}
+.state-kinh-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.state-kinh-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+}
+/* Thay đổi chiều của flex để hiển thị theo hàng ngang */
+/* .glasses-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+} */
+
+/* Kích thước nhỏ hơn cho các kính */
+.glass-item img {
+  max-width: 100px; /* Điều chỉnh kích thước tùy theo mong muốn */
+  height: auto;
+}
+.model-container {
+  position: relative;
+}
+
+.model-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.glass-image {
+  position: absolute;
+  top: 32%;
+  left: 43.5%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.glass-image {
+  /* position: relative; */
+  transition: opacity 0.3s ease-in-out; /* Thêm hiệu ứng chuyển đổi mờ mịt */
+}
+
+.glass-image.dimmed {
+  opacity: 0.7; /* Giảm độ mờ của tròng kính khi không được chọn */
+}
+.glass-info {
+  position: absolute;
+  top: 68%;
+  left: 4.5%;
+  transform: translate(-5%, -0%);
+  background-color: #C59576;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0.7;
+  text-align: left;
+}
+.glass-info h4{
+  color: blue;
+}
+.glass-info p{
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+}
+.listGlassess{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
+.glass-item img {
+  max-width: 150px;
+  height: auto;
+}
+.glasses-container {
+  display: flex;
+  justify-content: center;
+}
+
+.glasses-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px; 
+}
+
+.glass-item {
+  flex-basis: calc(33.33% - 10px); 
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.glass-item:hover {
+  transform: scale(1.1);
+}
+
+.selected {
+  border: 2px solid blue; 
+}
+
+
+
+
+
