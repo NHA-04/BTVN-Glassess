@@ -27,7 +27,7 @@ export default function StateKinh() {
                 </div>
               )}
               <img
-                src="./glassesImage/model.jpg"
+                src="./glassesImage/Thu.jpg"
                 alt=""
                 width="310px"
                 className="me-5"
@@ -36,7 +36,7 @@ export default function StateKinh() {
                 <img
                   src={selectedGlass.url}
                   alt={selectedGlass.name}
-                  width="177px"
+                  width="260px"
                   className={`glass-image ${selectedGlass ? "dimmed" : ""}`}
                 />
               )}
@@ -44,7 +44,7 @@ export default function StateKinh() {
           </div>
           <div>
             <img
-              src="./glassesImage/model.jpg"
+              src="./glassesImage/Thu.jpg"
               alt=""
               width="310px"
               className="ms-5"
